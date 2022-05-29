@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import info.learncoding.todo.databinding.FragmentLoginBinding
 import info.learncoding.todo.ui.base.BaseFragment
-import info.learncoding.todo.utils.State
+import info.learncoding.todo.data.models.State
 import info.learncoding.todo.utils.toast
 
 @AndroidEntryPoint

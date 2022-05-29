@@ -8,7 +8,7 @@ import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.lifecycle.HiltViewModel
 import info.learncoding.todo.data.models.Response
 import info.learncoding.todo.data.repositories.auth.AuthRepository
-import info.learncoding.todo.utils.State
+import info.learncoding.todo.data.models.State
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject

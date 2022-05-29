@@ -11,10 +11,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import dagger.hilt.android.AndroidEntryPoint
 import info.learncoding.todo.R
+import info.learncoding.todo.data.models.State
 import info.learncoding.todo.databinding.FragmentAddTodoBinding
 import info.learncoding.todo.ui.base.BaseFragment
 import info.learncoding.todo.utils.AppConstraint
-import info.learncoding.todo.utils.State
 import info.learncoding.todo.utils.toast
 
 @AndroidEntryPoint

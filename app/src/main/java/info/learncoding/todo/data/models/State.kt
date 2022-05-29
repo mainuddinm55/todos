@@ -1,4 +1,4 @@
-package info.learncoding.todo.utils
+package info.learncoding.todo.data.models
 
 sealed class State<out T> {
     data class Success<out T>(val data: T) : State<T>()

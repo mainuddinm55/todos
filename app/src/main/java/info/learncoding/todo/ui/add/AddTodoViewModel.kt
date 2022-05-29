@@ -7,7 +7,7 @@ import info.learncoding.todo.R
 import info.learncoding.todo.data.models.Response
 import info.learncoding.todo.data.models.Todo
 import info.learncoding.todo.data.repositories.todo.TodoRepository
-import info.learncoding.todo.utils.State
+import info.learncoding.todo.data.models.State
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.*
