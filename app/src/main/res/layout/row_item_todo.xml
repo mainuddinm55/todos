@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="todo"
+            type="info.learncoding.todo.data.models.Todo" />
+
+        <variable
+            name="isSelectionMode"
+            type="androidx.databinding.ObservableBoolean" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:padding="8dp">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/select_check_box"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:checked="@{todo.selected}"
+            android:visibility="@{isSelectionMode ? View.VISIBLE : View.GONE, default = invisible}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/todo_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/todo_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{todo.title}"
+            android:textAppearance="@style/HintTextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/delete_image_view"
+            app:layout_constraintStart_toEndOf="@id/select_check_box"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/delete_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/black"
+            android:visibility="@{isSelectionMode ? View.GONE : View.VISIBLE, default = gone}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/todo_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

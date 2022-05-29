@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Todo</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text">Login</string>
+    <string name="don_t_have_an_account_text">Don\'t have an account?</string>
+    <string name="signup_now_text">Signup now</string>
+    <string name="or_text">Or</string>
+    <string name="register_text">Register</string>
+    <string name="name_hint">Name</string>
+    <string name="login_now_text">Login now</string>
+    <string name="already_account_text">Already have account</string>
+    <string name="logout_text">Logout</string>
+    <string name="hint_write_todo">Type here.....</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="todos">Todos</string>
+    <string name="num_todos_selected">%d todo selected</string>
+    <string name="new_todo">New Todo</string>
+    <string name="update_todo">Update todo</string>
+    <string name="logout">Logout</string>
+    <string name="create_your_first_todo">Create your first todo</string>
+
+</resources>
